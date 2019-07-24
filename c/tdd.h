@@ -44,4 +44,3 @@ void assert_long(long left, long right, char *alert);
 void assert_double(double left, double right, char *alert);
 void assert_string(char *left, char *right, char *alert);
 void assert_char(char left, char right, char *alert);
-//TODO Add assert_time(func, max_time, alert);
