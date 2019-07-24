@@ -34,6 +34,8 @@ public:
  	 * 'alert_message' parameter of the class
 	 */
 	void assert_int(int left, int right);
+	void assert_int_superior(int left, int right);
+	void assert_int_inferior(int left, int right);
 	void assert_long(long left, long right);
 	void assert_double(double left, double right);
 	void assert_char(char left, char right);

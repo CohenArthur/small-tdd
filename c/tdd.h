@@ -11,7 +11,7 @@
 #define ALERT(alert) errx(1, RED "Test failed : %s\n", alert);
 
 #define TEST_NB 256
-#define MAX_TEST_NB 4096 * 10
+#define MAX_TEST_NB 4096 * 100
 
 #define VALUE_0 0
 #define VALUE_1 27

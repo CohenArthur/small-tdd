@@ -52,7 +52,7 @@ void assert_string(char *left, char *right, char *alert) {
 
 void assert_char(char left, char right, char *alert){
 	if (left != right) {
-		printf(RED "Left : %d, Right : %d\n", left, right);
+		printf(RED "Left : %c, Right : %c\n", left, right);
 		ALERT(alert);
 	}
 }
