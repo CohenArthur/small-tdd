@@ -1,10 +1,13 @@
+CC=gcc
+CPPC=g++
+
 all: c cpp
 
-c: test.c c/tdd.c
-	gcc -o test_c test.c c/tdd.c
+c: c/tdd.c test.c
+	$(CC) -o test_c test.c c/tdd.c
 
-cpp: test.cpp cpp/tdd.cpp
-	g++ -o test_cpp test.cpp cpp/tdd.cpp
+cpp: cpp/tdd.cpp test.cpp
+	$(CPPC) -o test_cpp test.cpp cpp/tdd.cpp
 
 clean:
 	${RM} test_c test_cpp *.o *.d
